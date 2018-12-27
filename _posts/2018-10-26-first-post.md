@@ -13,7 +13,7 @@ Another (in display):
 $$ \int x = y $$
 
 Code example: 
-```py
+```python
 import random 
 n = random.randint(10)
 ```
