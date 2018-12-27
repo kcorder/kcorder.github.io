@@ -8,5 +8,5 @@ Well. Finally got around to putting this old website together. Neat thing about 
 
 Maff: $\int x = \frac{x^2}{2}$
 
-Another:  
+Another (in display mode):  
 $$ \int x = y $$
