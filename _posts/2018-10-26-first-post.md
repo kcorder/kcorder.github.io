@@ -12,9 +12,9 @@ Another (in display):
 
 $$ \int x = y $$
 
-Code example here: 
+Code example here): 
 
-```py
+```python
 import random 
 n = random.randint(10)
 ```
