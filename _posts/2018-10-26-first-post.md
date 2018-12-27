@@ -12,7 +12,7 @@ Another (in display):
 
 $$ \int x = y $$
 
-Code example: 
+Code example _: 
 
 ```python
 import random 
