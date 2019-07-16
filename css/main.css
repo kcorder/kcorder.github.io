@@ -112,8 +112,10 @@ ul.posts li {
 /* .post pre,
 .post code { */
 /*     padding: 8px 12px; */
-.post pre { /*,*/
 /* .post code { */
+ /*,*/
+.post pre {
+    padding: 5px 5px; 
     border: 1px solid #d5d5e9;
     background-color: #eef;
     -webkit-border-radius: 0px;
