@@ -12,10 +12,11 @@ Another (in display):
 
 $$ \int x = y $$
 
-Code example here): 
+Code example here: 
 
 ```python
 import random 
 n = random.randint(10)
 ```
 
+text after 
