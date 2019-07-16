@@ -109,7 +109,7 @@ ul.posts li {
 
 /*  -------   FROM KARPATHY'S CSS: THIS DOESN'T SEEM TO DO ANYTHING? ----------- */
 
-.post pre,
+/* .post pre,
 .post code {
     border: 1px solid #d5d5e9;
     background-color: #eef;
@@ -128,6 +128,6 @@ ul.posts li {
     border: 0;
     padding-right: 0;
     padding-left: 0;
-}
+} */
 
 
