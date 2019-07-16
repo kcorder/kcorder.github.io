@@ -42,6 +42,7 @@ ul.posts li {
     list-style: none;
 }
 
+/*     FROM KARPATHY'S CSS: THIS DOESN'T SEEM TO DO ANYTHING?  
 .post pre,
 .post code {
     border: 1px solid #d5d5e9;
@@ -62,3 +63,4 @@ ul.posts li {
     padding-right: 0;
     padding-left: 0;
 }
+*/
