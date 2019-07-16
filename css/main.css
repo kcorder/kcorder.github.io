@@ -41,3 +41,15 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.post pre,
+.post code {
+  border: 1px solid #d5d5e9;
+  background-color: #eef;
+  padding: 8px 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  overflow:auto;
+}
