@@ -124,8 +124,8 @@ ul.posts li {
 /*     font-size: 15px; */
 /*     overflow:auto; */
 }
+/*     padding: 5px 5px;  */
 .post code { 
-    padding: 5px 5px; 
     font-size: 15px;
     overflow:auto;
 }
