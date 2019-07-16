@@ -45,7 +45,7 @@ ul.posts li {
 
 .highlight  { 
     background: #ffffff; 
-    padding: 5px; 
+    padding: 15px; 
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -132,18 +132,5 @@ ul.posts li {
     overflow:auto;
     
 }
-/* padding: 5px 5px; */
-
-/* asdf.post .highlight {
-    padding: 5px; 
-} */
-
-/* .post pre code { */
-/*     border: 0px; */
-/*     padding-right: 0; */
-/*     padding-left: 0; */
-
-/* } */
-/*     padding: 5px 5px;  */
 
 
