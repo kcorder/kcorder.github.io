@@ -115,7 +115,6 @@ ul.posts li {
 /* .post code { */
  /*,*/
 .post pre {
-    padding: 5px 5px; 
     border: 1px solid #d5d5e9;
     background-color: #eef;
     -webkit-border-radius: 0px;
@@ -126,6 +125,7 @@ ul.posts li {
 }
 /*     padding: 5px 5px;  */
 .post code { 
+    padding: 5px 5px; 
     font-size: 15px;
     overflow:auto;
 }
