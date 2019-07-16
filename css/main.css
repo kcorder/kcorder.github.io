@@ -120,22 +120,22 @@ ul.posts li {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-/*     font-size: 15px; */
-/*     overflow:auto; */
-}
-/*     padding: 5px 5px;  */
-.post code { 
-    margin: 5px 5px; 
     font-size: 15px;
     overflow:auto;
 }
+/*       */
+.post code { 
+    font-size: 15px;
+    overflow:auto;
+    padding: 5px 5px;
+}
 
-.post pre code {
+/* .post pre code { */
 /*     border: 0px; */
 /*     padding-right: 0; */
 /*     padding-left: 0; */
 
-}
+/* } */
 /*     padding: 5px 5px;  */
 
 
