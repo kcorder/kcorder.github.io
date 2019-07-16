@@ -130,6 +130,10 @@ ul.posts li {
     padding: 5px 5px;
 }
 
+.post highlight {
+    padding: 5px; 
+}
+
 /* .post pre code { */
 /*     border: 0px; */
 /*     padding-right: 0; */
