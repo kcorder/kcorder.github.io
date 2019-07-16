@@ -23,6 +23,7 @@ class A(other):
         super(A, self).__init__() 
 
 a = A() 
+b = A() 
 ```
 
 please work 
