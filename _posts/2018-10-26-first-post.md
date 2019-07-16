@@ -21,6 +21,8 @@ n = random.randint(10)
 class A(other): 
     def __init__(self): 
         super(A, self).__init__() 
+
+a = A() 
 ```
 
 please work 
