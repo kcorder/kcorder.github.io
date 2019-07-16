@@ -44,12 +44,21 @@ ul.posts li {
 
 .post pre,
 .post code {
-  border: 1px solid #d5d5e9;
-  background-color: #eef;
-  padding: 8px 12px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 15px;
-  overflow:auto;
+    border: 1px solid #d5d5e9;
+    background-color: #eef;
+    padding: 8px 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+    overflow:auto;
+}
+.post code { 
+    padding: 1px 5px; 
+}
+
+.post pre code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
