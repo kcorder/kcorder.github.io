@@ -24,7 +24,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 1.0em;
     line-height: 1.4em;
     color: #333;
 }
@@ -115,14 +115,14 @@ ul.posts li {
     border: 1px solid #d5d5e9;
     background-color: #eef;
 /*     padding: 8px 12px; */
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
 /*     font-size: 15px; */
 /*     overflow:auto; */
 }
 .post code { 
-    padding: 1px 1px; 
+    padding: 1px 5px; 
     font-size: 15px;
     overflow:auto;
 }
