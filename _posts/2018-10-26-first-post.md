@@ -18,9 +18,9 @@ Code example here:
 import random 
 n = random.randint(10)
 
-class A: 
+class A(other): 
     def __init__(self): 
-        pass 
+        super(A, self).__init__() 
 ```
 
 please work 
