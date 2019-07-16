@@ -129,10 +129,10 @@ ul.posts li {
 }
 
 .post pre code {
-    border: 0px;
+/*     border: 0px; */
 /*     padding-right: 0; */
 /*     padding-left: 0; */
-    padding: 5px 5px; 
+/*     padding: 5px 5px;  */
 }
 
 
