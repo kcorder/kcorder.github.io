@@ -42,7 +42,7 @@ ul.posts li {
     list-style: none;
 }
 
-.highlight  { background: #ffffff; }
+.highlight  { background: #eeeeee; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
@@ -110,8 +110,8 @@ ul.posts li {
 /*  -------   FROM KARPATHY'S CSS: THIS DOESN'T SEEM TO DO ANYTHING? ----------- */
 /* .post pre,
 .post code { */
-.highlight pre,
-.highlight code {
+.post pre,
+.post code {
     border: 1px solid #d5d5e9;
     background-color: #eef;
     padding: 8px 12px;
@@ -121,11 +121,11 @@ ul.posts li {
     font-size: 15px;
     overflow:auto;
 }
-.highlight code { 
+.post code { 
     padding: 1px 5px; 
 }
 
-.highlight pre code {
+.post pre code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
