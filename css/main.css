@@ -45,7 +45,9 @@ ul.posts li {
 
 .highlight  { 
     background: #ffffff; 
-    padding: 15px; 
+}
+.highlight pre {
+    padding: 15px;    
 }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -112,11 +114,7 @@ ul.posts li {
 .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }  */
 
 /*  -------   FROM KARPATHY'S CSS: THIS DOESN'T SEEM TO DO ANYTHING? ----------- */
-/* .post pre,
-.post code { */
-/*     padding: 8px 12px; */
-/* .post code { */
- /*,*/
+
 .post pre {
     border: 1px solid #d5d5e9;
     background-color: #eef;
@@ -130,7 +128,6 @@ ul.posts li {
 .post code { 
     font-size: 15px;
     overflow:auto;
-    
 }
 
 
