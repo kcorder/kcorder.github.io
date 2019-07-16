@@ -17,6 +17,7 @@ Code example here:
 ```python
 import random 
 n = random.randint(10)
+
 class A: 
     def __init__(self): 
         pass 
