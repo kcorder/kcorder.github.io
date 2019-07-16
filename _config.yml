@@ -1,6 +1,6 @@
 Name: Kevin Corder, PhD Student
 markdown: kramdown
-highlighter: rouge 
+highlighter: pygments
 permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-sitemap
