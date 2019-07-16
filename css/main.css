@@ -127,10 +127,11 @@ ul.posts li {
     overflow:auto;
 }
 
-/* .post pre code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-}  */
+.post pre code {
+    border: 0px;
+/*     padding-right: 0; */
+/*     padding-left: 0; */
+    padding: 0px; 
+}
 
 
