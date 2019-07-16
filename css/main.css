@@ -130,12 +130,13 @@ ul.posts li {
 .post code { 
     font-size: 15px;
     overflow:auto;
-    padding: 5px 5px;
+    
 }
+/* padding: 5px 5px; */
 
-.post .highlight {
+/* asdf.post .highlight {
     padding: 5px; 
-}
+} */
 
 /* .post pre code { */
 /*     border: 0px; */
