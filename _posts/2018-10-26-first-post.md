@@ -17,6 +17,12 @@ Another (in display):
 
 $$ \int x = y $$
 
+With colored bits:
+
+$$ \color{red}{\text{ELBO}(q)} = \color{blue}{\mathbb{E}[\log p(x|z)] - \text{KL}(q(z) || p(z))} $$
+
+
+
 Code example here: 
 
 ```python
