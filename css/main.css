@@ -1,8 +1,8 @@
 body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 60px auto;
-    width:90%;
-    max-width:1200px;
+    width: 90%;
+    max-width: 1200px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
