@@ -49,8 +49,8 @@ ul.posts li {
     float: right;
     margin-left: 15px;
 }
-.homepage #container {
-    min-height: 1000px;
+.homepage {
+    min-height: 1500px;
 }
 
 .highlight  { 
