@@ -52,6 +52,12 @@ ul.posts li {
 .homepage {
     min-height: 500px;
 }
+.pdf {
+    width: 100%; 
+    max-width: none; 
+    height: 100%; 
+    max-height: none; 
+}
 
 .highlight  { 
     background: #ffffff; 
