@@ -47,6 +47,7 @@ ul.posts li {
 .homepage img {
     border-radius: 15%;
     float: right;
+    margin-left: 15px;
 }
 
 .highlight  { 
