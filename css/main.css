@@ -3,7 +3,6 @@ body {
     margin: 60px auto;
     width: 90%;
     max-width: 1000px;
-    min-height: 80%; 
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -51,7 +50,7 @@ ul.posts li {
     margin-left: 15px;
 }
 .homepage {
-    min-height: 1500px;
+    min-height: 600px;
 }
 
 .highlight  { 
