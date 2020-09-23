@@ -49,6 +49,9 @@ ul.posts li {
     float: right;
     margin-left: 15px;
 }
+#homepage-content {
+    min-height: 500px;
+}
 
 .highlight  { 
     background: #ffffff; 
