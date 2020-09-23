@@ -49,7 +49,7 @@ ul.posts li {
     float: right;
     margin-left: 15px;
 }
-#homepage-content {
+.homepage #container {
     min-height: 1000px;
 }
 
