@@ -1,6 +1,11 @@
----
-layout: default
----
-<div class="pdf">
-  {{ content }} 
-</div> 
+{% highlight html %}
+{% raw %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {{ content }}
+  </body>
+</html>
+{% endraw %}
+{% endhighlight %}
