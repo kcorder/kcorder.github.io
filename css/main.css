@@ -60,7 +60,8 @@ ul.posts li {
 }
 
 .post a {
-    font-weight: bold; /* make links in posts bold */ 
+    font-weight: bold; /* make links in posts bold and blue */ 
+    color: #0282f2; 
 }
 
 .highlight  { 
