@@ -144,6 +144,7 @@ ul.posts li {
 .post code { 
     font-size: 15px;
     overflow:auto;
+    background-color: #eef;
 }
 
 
