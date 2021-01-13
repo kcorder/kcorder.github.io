@@ -4,8 +4,6 @@ title: "My Terminal Configs"
 date: 2021-01-13
 ---
 
-# My Terminal Configs 
-
 There's a couple configs that I've gotten used to, so add these when using a new computer! 
 
 
