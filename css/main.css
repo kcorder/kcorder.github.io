@@ -59,6 +59,10 @@ ul.posts li {
     max-height: none; 
 }
 
+.post a {
+    font-weight: bold; /* make links in posts bold */ 
+}
+
 .highlight  { 
     background: #ffffff; 
 }
