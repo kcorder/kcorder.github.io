@@ -6,8 +6,8 @@ title: Kevin Corder's Blog
     <i>Disclaimer:</i> all posts here are for my own learning and reference. If others find them useful, that's great too :-) <br> 
 
     <ul class="posts">
-        {% for post in site.posts %}
-            {% for post in site.categories.blogposts %}
+        {% for post in site.categories.blogposts %}
+            {% if post.url %}
                 <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
             {% endif %} 
         {% endfor %}
