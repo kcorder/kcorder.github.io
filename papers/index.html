@@ -6,7 +6,9 @@ title: Kevin Corder's Work
     These posts are less technical descriptions of my own work vs. found in publication, and contain links to the papers and code. <br> 
 
     <ul class="posts">
-        {% for paper in site.papers %}
-            <li><span>{{ paper.date | date_to_string }}</span> » <a href="{{ paper.url }}" title="{{ paper.title }}">{{ paper.title }}</a></li>
+        {% for post in site.categories.papers %}
+            {% if post.url %}
+                <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endif %} 
         {% endfor %}
     </ul>
