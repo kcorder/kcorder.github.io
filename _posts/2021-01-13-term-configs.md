@@ -19,6 +19,21 @@ alias rm='rm -i'  # safe rm
 
 ### These may already exist on Unix systems, check for them! ####
 
+# History settings 
+# don't put duplicate lines or lines starting with space in the history.
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=20000
+
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -36,7 +51,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# color user@host:dir$ prompt  (put this before conda init!) 
+# color user@host:dir$ prompt  (put this BEFORE conda init!) 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\W\[\033[1;31m\]\$\[\033[0m\] '
 
 # function to make copying directory hierarchies easy! Useful for collecting ML results :-) 
