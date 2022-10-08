@@ -11,8 +11,6 @@ There's a couple configs that I've gotten used to, so add these when using a new
 
 ## Bash 
 
-Just some aliases: 
-
 ```bash
 alias rm='rm -i'  # safe rm 
 
