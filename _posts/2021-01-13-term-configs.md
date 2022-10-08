@@ -38,6 +38,13 @@ alias l='ls -CF'
 
 # color user@host:dir$ prompt  (put this before conda init!) 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\W\[\033[1;31m\]\$\[\033[0m\] '
+
+# function to make copying directory hierarchies easy! Useful for collecting ML results :-) 
+copytree () {
+    # requires 2 args: SRC and DST 
+    python3.8 -c "import shutil; from os.path import expanduser; \
+    shutil.copytree(expanduser('${1}'), expanduser('${2}'), dirs_exist_ok=True)"
+}
 ```
 
 
