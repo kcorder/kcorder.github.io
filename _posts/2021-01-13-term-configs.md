@@ -58,6 +58,11 @@ copytree () {
     python3.8 -c "import shutil; from os.path import expanduser; \
     shutil.copytree(expanduser('${1}'), expanduser('${2}'), dirs_exist_ok=True)"
 }
+
+# Recursively touch every file in current directory.
+# Useful for HPC systems that scrub old files. -mtime flag makes more efficient when it errors out. 
+alias touchall='find . -mtime +1 -exec touch {} +'
+
 ```
 
 
