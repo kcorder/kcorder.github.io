@@ -12,7 +12,12 @@ There's a couple configs that I've gotten used to, so add these when using a new
 ## Bash 
 
 ```bash
-alias rm='rm -i'  # safe rm 
+# Safe rm 
+alias rm='rm -i'  
+
+# Recursively touch every file in current directory.
+# Useful for HPC systems that scrub old files. -mtime flag makes more efficient when it errors out. 
+alias touchall='find . -mtime +1 -exec touch {} +'
 
 
 ### These may already exist on Unix systems, check for them! ####
@@ -58,11 +63,6 @@ copytree () {
     python3.8 -c "import shutil; from os.path import expanduser; \
     shutil.copytree(expanduser('${1}'), expanduser('${2}'), dirs_exist_ok=True)"
 }
-
-# Recursively touch every file in current directory.
-# Useful for HPC systems that scrub old files. -mtime flag makes more efficient when it errors out. 
-alias touchall='find . -mtime +1 -exec touch {} +'
-
 ```
 
 
