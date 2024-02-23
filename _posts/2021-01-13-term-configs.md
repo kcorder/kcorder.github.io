@@ -74,7 +74,7 @@ I like the "monokain" color scheme for Vim. To install it:
 ```bash 
 mkdir -p ~/.vim/colors
 cd ~/.vim/colors
-wget https://github.com/flazz/vim-colorschemes/blob/master/colors/monokain.vim
+wget https://raw.githubusercontent.com/flazz/vim-colorschemes/master/colors/monokain.vim
 ```
 
 `~/.vimrc`: 
