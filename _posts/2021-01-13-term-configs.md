@@ -70,7 +70,12 @@ copytree () {
 
 ## Vim 
 
-I like the "monokain" color scheme for Vim. To install it, copy the file to `~/.vim/colors/monkain.vim`. It can be found [here](https://github.com/flazz/vim-colorschemes/blob/master/colors/monokain.vim). 
+I like the "monokain" color scheme for Vim. To install it: 
+```bash 
+mkdir -p ~/.vim/colors
+cd ~/.vim/colors
+wget https://github.com/flazz/vim-colorschemes/blob/master/colors/monokain.vim
+```
 
 `~/.vimrc`: 
 
