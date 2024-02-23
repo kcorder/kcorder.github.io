@@ -108,9 +108,11 @@ endfunction
 
 ## Git 
 
-Run `git config --global credential.helper cache` to save login info on the current machine for this user. This writes to `~/.gitconfig`. Now also add this alias to that gitconfig file to visualize the branches with `git tree`: 
+Add these to `~/.gitconfig` to save login info on the current machine for this user, and to visualize the branches with `git tree`: 
 
 ```bash
+[credential]
+    helper = cache
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
 ```
