@@ -63,6 +63,17 @@ copytree () {
     python3.8 -c "import shutil; from os.path import expanduser; \
     shutil.copytree(expanduser('${1}'), expanduser('${2}'), dirs_exist_ok=True)"
 }
+
+# These change the process tracing permissions, 
+#   useful for attaching processes during debugging. 
+enable_debugging() {
+    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+    echo "ptrace_scope set to 0. Debugging enabled."
+}
+disable_debugging() {
+    echo 1 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+    echo "ptrace_scope set to 1. Debugging disabled."
+}
 ```
 
 
