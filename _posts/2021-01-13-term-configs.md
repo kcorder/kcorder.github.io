@@ -76,9 +76,16 @@ disable_debugging() {
 }
 
 # Often need to sync results from offline HPC nodes.
-#     Run this within a repo's "wandb/" dir to sync all offline runs. 
+#     Run this within a repo's "wandb/" dir to sync all offline runs
+#     (with backgrounding so it doesn't take forever). 
 wandb-sync-offline() {
-    wandb sync --include-offline ./offline-run-*
+    LOG_FILE="sync_log.txt" 
+    for FILE in offline-run-*; do  
+        wandb sync "$FILE" >> "$LOG_FILE" 2>&1 & 
+        sleep 5 
+    done 
+    wait 
+    echo "Finished syncing offline runs" 
 }
 ```
 
