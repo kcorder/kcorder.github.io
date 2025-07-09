@@ -87,6 +87,17 @@ wandb-sync-offline() {
     wait 
     echo "Finished syncing offline runs" 
 }
+
+# Prints all dirs under CWD with size less than 5KB. 
+# Useful for finding failed tensorboard runs. 
+find-small-dirs() {
+    find . -type d -print0 | while IFS= read -r -d $'\0' dir; do
+        size=$(du -sb "$dir" | awk '{print $1}');
+        if (( size < 5000 )); then
+            echo "${dir}";
+        fi; 
+    done
+}
 ```
 
 
