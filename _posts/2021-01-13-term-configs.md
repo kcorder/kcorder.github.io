@@ -150,4 +150,7 @@ Add these to `~/.gitconfig` to save login info on the current machine for this u
     helper = cache
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    mr = "!f() { git fetch origin merge-requests/$1/head:mr-$1 && git checkout mr-$1; }; f" 
+    squash-all = "!f(){ git reset $(git commit-tree \"HEAD^{tree}\" \"$@\");};f" 
+    # Usage: git squash-all -m "New initial commit message"
 ```
