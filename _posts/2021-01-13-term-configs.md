@@ -98,6 +98,12 @@ find-small-dirs() {
         fi; 
     done
 }
+
+pdf2svg-cwd (){
+    # Create a .svg file for every .pdf found under the current dir tree.
+    # Mostly used to copy generated figures into Powerpoint... 
+    find . -name "*.pdf" -exec inkscape --export-type="svg" "{}" \;
+}
 ```
 
 
