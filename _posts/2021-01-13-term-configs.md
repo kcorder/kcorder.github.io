@@ -64,6 +64,46 @@ copytree () {
     shutil.copytree(expanduser('${1}'), expanduser('${2}'), dirs_exist_ok=True)"
 }
 
+# function to delete all dirs in current $PWD except for those provided as args
+# useful to clean up failed/partial ML result dirs 
+cleanup_keep_dirs() {
+    local -a good_dirs=("$@")
+
+    if [[ ${#good_dirs[@]} -eq 0 ]]; then
+        echo "Usage: cleanup_keep_dirs <dir_to_keep> [dir_to_keep ...]" >&2
+        return 1
+    fi
+
+    for good_dir in "${good_dirs[@]}"; do
+        if [[ ! -d "./$good_dir" ]]; then
+            echo "Error: '$good_dir' not found in current directory" >&2
+            return 1
+        fi
+    done
+
+    # Build find exclusions dynamically
+    local -a excludes=()
+    for good_dir in "${good_dirs[@]}"; do
+        excludes+=( ! -name "$good_dir" )
+    done
+
+    local total
+    total=$(find . -maxdepth 1 -type d ! -name "." | wc -l)
+
+    local -a to_delete
+    mapfile -d '' to_delete < <(find . -maxdepth 1 -type d ! -name "." "${excludes[@]}" -print0)
+
+    local expected=$(( total - ${#good_dirs[@]} ))
+    if [[ ${#to_delete[@]} -ne $expected ]]; then
+        echo "Error: expected $expected dirs to delete, find returned ${#to_delete[@]}" >&2
+        printf '  %s\n' "${to_delete[@]}" >&2
+        return 1
+    fi
+
+    printf 'Deleting %d directories, keeping: %s\n' "${#to_delete[@]}" "${good_dirs[*]}"
+    printf '%s\0' "${to_delete[@]}" | xargs -0 rm -rf
+}
+
 # These change the process tracing permissions, 
 #   useful for attaching processes during debugging. 
 enable_debugging() {
