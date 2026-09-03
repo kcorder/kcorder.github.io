@@ -139,12 +139,24 @@ find-small-dirs() {
     done
 }
 
+
 pdf2svg-cwd (){
     # Create a .svg file for every .pdf found under the current dir tree.
     # Mostly used to copy generated figures into Powerpoint... 
     find . -name "*.pdf" -exec inkscape --export-type="svg" "{}" \;
 }
+
+# Copies absolute path of arg $1 to the clipboard
+# If no arg provided, defaults to copying the current PWD. 
+cpypath() {
+    local target="${1:-$PWD}" # use argument $1, or default to $PWD 
+    local abs_path 
+    abs_path=$(readlink -f "$target")
+    echo -n "$abs_path" | xclip -selection clipboard
+}
+
 ```
+
 
 
 
